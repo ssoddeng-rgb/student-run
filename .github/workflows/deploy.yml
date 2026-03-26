@@ -27,5 +27,5 @@ jobs:
       - name: Deploy to Cloudflare Pages
         run: npx wrangler pages deploy . --project-name student-run --branch main --commit-dirty=true
         env:
-          CLOUDFLARE_OAUTH_TOKEN: ${{ steps.cf_token.outputs.access_token }}
+          CLOUDFLARE_API_TOKEN: ${{ steps.cf_token.outputs.access_token }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
