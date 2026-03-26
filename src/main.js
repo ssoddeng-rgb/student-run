@@ -6,6 +6,12 @@ var config = {
     width: 800,
     height: 400,
     pixelArt: true,             // 픽셀아트 렌더링 (안티앨리어싱 비활성화)
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+        width: 800,
+        height: 400,
+    },
     backgroundColor: '#87CEEB', // 하늘색 배경
     physics: {
         default: 'arcade',
